@@ -7,3 +7,4 @@
 - [vue2.x生命周期图解](https://github.com/MilkXin/blog/blob/master/img/vue2.x%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.png)
 - [react组件生命周期](https://github.com/MilkXin/blog/issues/5)
 - [Ajax兼容写法及状态码释义](https://github.com/MilkXin/blog/issues/6)
+- [rollup的简单使用](https://github.com/MilkXin/blog/issues/7)
