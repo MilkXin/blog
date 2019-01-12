@@ -8,3 +8,4 @@
 - [react组件生命周期](https://github.com/MilkXin/blog/issues/5)
 - [Ajax兼容写法及状态码释义](https://github.com/MilkXin/blog/issues/6)
 - [rollup的简单使用](https://github.com/MilkXin/blog/issues/7)
+- [前端性能优化之](https://github.com/MilkXin/blog/tree/master/notes)
