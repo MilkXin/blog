@@ -11,3 +11,4 @@
 - [前端性能优化之雅虎军规](https://github.com/MilkXin/blog/blob/master/notes/%E9%9B%85%E8%99%8E%E5%86%9B%E8%A7%84.md)
 - [前端性能优化](https://juejin.im/post/5b0bff30f265da08f76cc6f0 "from掘金")
 - [前端安全](https://juejin.im/post/59dc2b7a6fb9a0451869ae3a "from掘金")
+- [WebSocket的简单应用](https://github.com/MilkXin/blog/blob/master/notes/WebSocket.md)
