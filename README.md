@@ -13,3 +13,4 @@
 - [前端安全](https://juejin.im/post/59dc2b7a6fb9a0451869ae3a "from掘金")
 - [WebSocket的简单应用](https://github.com/MilkXin/blog/blob/master/notes/WebSocket.md)
 - [rem布局css_reset](https://github.com/MilkXin/blog/blob/master/notes/css_reset.md)
+- [阿里高清方案](http://www.aliued.com/?p=3166)
