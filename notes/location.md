@@ -1,3 +1,5 @@
+[location详解文章](https://www.jianshu.com/p/bd0866de3621)
+
 ```
 var url = document.location;
 url.href = 'https://developer.mozilla.org/en-US/search?q=URL#search-results-close-container';
