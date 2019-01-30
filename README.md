@@ -14,3 +14,4 @@
 - [WebSocket的简单应用](https://github.com/MilkXin/blog/blob/master/notes/WebSocket.md)
 - [rem布局css_reset](https://github.com/MilkXin/blog/blob/master/notes/css_reset.md)
 - [阿里高清方案](http://www.aliued.com/?p=3166)
+- [location用法](https://github.com/MilkXin/blog/blob/master/notes/location.md)
