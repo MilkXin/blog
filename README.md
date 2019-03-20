@@ -15,3 +15,4 @@
 - [rem布局css_reset](https://github.com/MilkXin/blog/blob/master/notes/css_reset.md)
 - [阿里高清方案](http://www.aliued.com/?p=3166)
 - [location用法](https://github.com/MilkXin/blog/blob/master/notes/location.md)
+- [腾讯前端开发规范](https://github.com/MilkXin/blog/blob/master/notes/%E8%85%BE%E8%AE%AF%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83)
