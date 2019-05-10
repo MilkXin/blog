@@ -25,8 +25,7 @@
   ```
   const arr = ['Nick', 'Frank', 'Joe', 'Frank'];
   const foundIndex = arr.findIndex(el => el === 'Frank');
-  console.log(foundIndex);
-  // 1
+  console.log(foundIndex);// 1
   ```
 * **includes**:返回一个布尔值。 参数是一个value,一般用于简单数组。对于复杂数组，则可以使用some()方法替代includes()方法
   ```
@@ -36,10 +35,14 @@
 * **some**:此方法是将所有元素进行判断返回一个布尔值，如果存在元素满足判断条件，则返回true，若所有元素都不满足判断条件，则返回false
   ```
   let arr= [1, 2, 3, 4, 5]
-  const isLessThan4 = value => value < 4
-  const isLessThan6 = value => value > 6
-  arr.some(isLessThan4 ) //true
-  arr.some(isLessThan6 ) //false
+  const a = arr.some((value, index, array) => {
+      return value > 3
+  })
+  const b = arr.some((value, index, array) => {
+      return value > 6
+  })
+  console.log(a) //true
+  console.log(b)//false
   ```
 * **splice**:通过删除或替换现有元素和/或添加新元素来更改数组的内容，此方法会修改了数组本身。下面的代码示例的意思是：在数组的位置 1 上删除 0 个元素，并插入 b
   ```
@@ -55,19 +58,29 @@
   console.log(arr);
   // ['a', 'b', 'c', 'd', 'e']
   ```
-* **forEach**:此方法是将数组中的每个元素执行传进提供的函数，没有返回值，直接改变原数组，注意和map方法区分
+* **forEach**:此方法是将数组中的每个元素执行传进提供的函数，中途不能中断，没有返回值，注意和map方法区分
   ```
-  let arr = [1, 2, 3, 4, 5]
-  num.forEach(x => x*2)
-  // arr = [2, 4, 6, 8, 10]  数组改变,注意和map区分
+  let arr = [11, 22, 33, 44, 55]
+  arr.forEach((value, index, array) => {
+      console.log(index, value)
+  })
+  // 0 11
+  // 1 22
+  // 2 33
+  // 3 44
+  // 4 55
   ```
 * **every**:此方法是将所有元素进行判断返回一个布尔值，如果所有元素都满足判断条件，则返回true，否则为false
   ```
   let arr = [1, 2, 3, 4, 5]
-  const isLessThan4 => value => value < 4
-  const isLessThan6 => value => value < 6
-  arr.every(isLessThan4 ) //false
-  arr.every(isLessThan6 ) //true
+  const a = arr.every((value, index, array) => {
+      return value < 3
+  })
+  const b = arr.every((value, index, array) => {
+      return value < 6
+  })
+  console.log(a) //false
+  console.log(b) //true
   ```
 * **indexOf**：与findIndex几乎完全相同，但它不是将函数作为参数，而是采用一个简单的值。 当w你需要更简单的逻辑并且不需要使用函数来检查是否存在匹配时，可以使用此方法
   ```
@@ -112,7 +125,7 @@
   console.log(unshifted);
   // 7
   ```
-* **sort**:根据提供的函数对数组进行排序。这个方法就地修改数组。如果函数返回负数或 0，则顺序保持不变。如果返回正数，则交换元素顺序
+* **sort**:根据提供的函数对数组进行排序。这个方法就地修改数组。如果函数返回负数正序排列，返回0则顺序保持不变。如果返回正数，则倒序排列
   ```
   let arr = [1, 7, 3, -1, 5, 7, 2];
   const sorter = (firstEl, secondEl) => firstEl - secondEl;
@@ -141,14 +154,14 @@
 * **join**:此方法也是将数组转化为字符串
   ```
   let arr = [1, 2, 3, 4, 5];
-  let str1 = arr.toString()
-  let str2 = arr.toString(',')
-  let str3 = arr.toString('##')
+  let str1 = arr.join()
+  let str2 = arr.join(',')
+  let str3 = arr.join('##')
   console.log(str1)// 12345
   console.log(str2)// 1,2,3,4,5
   console.log(str3)// 1##2##3##4##5
   ```
-* **reverse**:颠倒数组
+* **reverse**:翻转数组
   ```
   let fruits = ["Banana", "Orange", "Apple", "Mango"]
   fruits.reverse()
