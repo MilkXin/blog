@@ -33,6 +33,14 @@
   var a = [1,2,3]
   console.log(a.includes(1))  // true
   ```
+* **some**:此方法是将所有元素进行判断返回一个布尔值，如果存在元素都满足判断条件，则返回true，若所有元素都不满足判断条件，则返回false
+  ```
+  let arr= [1, 2, 3, 4, 5]
+  const isLessThan4 => value => value < 4
+  const isLessThan6 => value => value > 6
+  arr.some(isLessThan4 ) //true
+  arr.some(isLessThan6 ) //false
+  ```
 * **splice**:通过删除或替换现有元素和/或添加新元素来更改数组的内容，此方法会修改了数组本身。下面的代码示例的意思是：在数组的位置 1 上删除 0 个元素，并插入 b
   ```
   let arr = ['a', 'c', 'd', 'e'];
@@ -60,14 +68,6 @@
   const isLessThan6 => value => value < 6
   arr.every(isLessThan4 ) //false
   arr.every(isLessThan6 ) //true
-  ```
-* **some**:此方法是将所有元素进行判断返回一个布尔值，如果存在元素都满足判断条件，则返回true，若所有元素都不满足判断条件，则返回false
-  ```
-  let arr= [1, 2, 3, 4, 5]
-  const isLessThan4 => value => value < 4
-  const isLessThan6 => value => value > 6
-  arr.some(isLessThan4 ) //true
-  arr.some(isLessThan6 ) //false
   ```
 * **indexOf**：与findIndex几乎完全相同，但它不是将函数作为参数，而是采用一个简单的值。 当w你需要更简单的逻辑并且不需要使用函数来检查是否存在匹配时，可以使用此方法
   ```
