@@ -19,5 +19,5 @@
 - [深入理解JS执行上下文和执行栈](https://blog.fundebug.com/2019/03/20/understand-javascript-context-and-stack/)
 - [响应式断点设置](https://github.com/MilkXin/blog/blob/master/notes/%E5%93%8D%E5%BA%94%E5%BC%8F%E6%96%AD%E7%82%B9%E8%AE%BE%E7%BD%AE.md)
 - [查看windows全局安装的npm项目](https://github.com/MilkXin/blog/blob/master/notes/%E9%9A%8F%E6%89%8B%E8%AE%B0.md)
-- JavaScript内置对象常用方法
+- *JavaScript内置对象常用方法*
   * [js数组常用方法](https://github.com/MilkXin/blog/blob/master/notes/js%E6%95%B0%E7%BB%84%E6%96%B9%E6%B3%95.md)
