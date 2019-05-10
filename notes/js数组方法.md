@@ -148,7 +148,7 @@
   console.log(str2)// 1,2,3,4,5
   console.log(str3)// 1##2##3##4##5
   ```
-* **reverse**:翻转数组
+* **reverse**:颠倒数组
   ```
   let fruits = ["Banana", "Orange", "Apple", "Mango"]
   fruits.reverse()
