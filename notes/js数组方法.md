@@ -33,7 +33,7 @@
   var a = [1,2,3]
   console.log(a.includes(1))  // true
   ```
-* **some**:此方法是将所有元素进行判断返回一个布尔值，如果存在元素都满足判断条件，则返回true，若所有元素都不满足判断条件，则返回false
+* **some**:此方法是将所有元素进行判断返回一个布尔值，如果存在元素满足判断条件，则返回true，若所有元素都不满足判断条件，则返回false
   ```
   let arr= [1, 2, 3, 4, 5]
   const isLessThan4 = value => value < 4
