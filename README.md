@@ -21,3 +21,4 @@
 - [查看windows全局安装的npm项目](https://github.com/MilkXin/blog/blob/master/notes/%E9%9A%8F%E6%89%8B%E8%AE%B0.md)
 - *JavaScript内置对象常用方法*
   * [js数组常用方法](https://github.com/MilkXin/blog/blob/master/notes/js%E6%95%B0%E7%BB%84%E6%96%B9%E6%B3%95.md)
+- [js原生复制内容到剪切板](https://github.com/MilkXin/blog/blob/master/notes/js%E5%8E%9F%E7%94%9F%E5%A4%8D%E5%88%B6%E6%96%B9%E6%B3%95.md)
