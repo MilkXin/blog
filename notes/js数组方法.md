@@ -1,6 +1,8 @@
 ## js数组方法
 
   ***会改变原数组的方法：splice, push, pop, shift, unshift, sort, reverse***
+  
+  ***高阶函数方法：map, filter, find, findIndex, some, every, forEach, sort***
 
 * **map**：返回一个数组，其中每个元素都使用指定函数进行过转换
   ```
