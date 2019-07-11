@@ -1,5 +1,7 @@
 ## js数组方法
 
+  ***会改变原数组的方法：splice, push, pop, shift, unshift, sort, reverse***
+
 * **map**：返回一个数组，其中每个元素都使用指定函数进行过转换
   ```
   const arr = [1, 2, 3, 4, 5, 6]
@@ -83,7 +85,7 @@
   const foundIndex = arr.indexOf('Frank')
   console.log(foundIndex) // 1
   ```
-* **push**：这是一个相对简单的方法，它将一个项添加到数组的末尾。它就地修改数组，函数本身会返回添加到数组中的项
+* **push**：这是一个相对简单的方法，它将一个项添加到数组的末尾。它就地修改数组，函数本身会返回添加后数组的长度
   ```
   let arr = [1, 2, 3, 4]
   const pushed = arr.push(5)
