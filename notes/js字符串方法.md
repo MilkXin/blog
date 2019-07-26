@@ -78,8 +78,8 @@
   ```
   var str = 'abcde';
   str.split() // ['abcde']
-  str.splice('') // ['a', 'b', 'c', 'd', 'e']
-  str.splice('b') // ['a', 'cde']
+  str.split('') // ['a', 'b', 'c', 'd', 'e']
+  str.split('b') // ['a', 'cde']
   ```
 
 * **concat**返回一个两个或者两个以上的字符串拼接的字符串，不改变原字符串
