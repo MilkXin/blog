@@ -24,3 +24,4 @@
   * [js字符串方法](https://github.com/MilkXin/blog/blob/master/notes/js%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%96%B9%E6%B3%95.md)
   * [js数组常用方法](https://github.com/MilkXin/blog/blob/master/notes/js%E6%95%B0%E7%BB%84%E6%96%B9%E6%B3%95.md)
 - [js原生复制内容到剪切板](https://github.com/MilkXin/blog/blob/master/notes/js%E5%8E%9F%E7%94%9F%E5%A4%8D%E5%88%B6%E6%96%B9%E6%B3%95.md)
+- [npm包全局安装位置](https://github.com/MilkXin/blog/blob/master/notes/npm%E5%85%A8%E5%B1%80%E5%AE%89%E8%A3%85%E5%8C%85%E4%BD%8D%E7%BD%AE.md)
