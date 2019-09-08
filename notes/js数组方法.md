@@ -156,3 +156,13 @@
   fruits.reverse()
   console.log(fruits) // ["Mango", "Apple", "Orange", "Banana"]
   ```
+* **reduce**：
+  ```
+  const arr = [1, 2, 3, 4, 5]
+  //数组求和
+  const sum = arr.reduce((prev, cur, index, arr) => {
+      return prev + cur
+  })
+  console.log(sum) // 15
+  ```
+  
