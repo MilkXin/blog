@@ -26,3 +26,4 @@
 - [npm常用命令](https://github.com/MilkXin/blog/blob/master/notes/npm%E5%85%A8%E5%B1%80%E5%AE%89%E8%A3%85%E5%8C%85%E4%BD%8D%E7%BD%AE.md)
 - [flex布局](https://github.com/MilkXin/blog/blob/master/img/flex%E5%B8%83%E5%B1%80.jpg)
 - [手写deepClone和bind函数](https://github.com/MilkXin/blog/blob/master/notes/deepClone%26bind.md)
+- [前端内存泄露](https://segmentfault.com/a/1190000020277827)
