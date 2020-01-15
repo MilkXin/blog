@@ -25,6 +25,11 @@
   var str = ' abc de '
   str.trim() // 'abc de'
   ```
+* **trimStart**去除字符串头部空格
+* **trimEnd**去除字符串尾部空格
+
+* **padStart**字符串头部补齐
+* **padEnd**字符串尾部补齐
 
 * **repeat**字符串复制指定次数
   ```
