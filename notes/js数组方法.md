@@ -6,7 +6,7 @@
   
   ***迭代方法：every, some, forEach, map, filter, reduce***
   
-  ***搜索方法：indexOf, lastIndexOd, find, findIndex***
+  ***搜索方法：indexOf, lastIndexOf, find, findIndex***
   
   ***排序方法：reverse, sort***
 
