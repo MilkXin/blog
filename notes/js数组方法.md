@@ -3,6 +3,12 @@
   ***会改变原数组的方法：splice, push, pop, shift, unshift, sort, reverse***
   
   ***高阶函数方法：map, filter, find, findIndex, some, every, forEach, sort***
+  
+  ***迭代方法：every, some, forEach, map, filter, reduce***
+  
+  ***搜索方法：indexOf, lastIndexOd, find, findIndex***
+  
+  ***排序方法：reverse, sort***
 
 * **map**：返回一个数组，其中每个元素都使用指定函数进行过转换
   ```
