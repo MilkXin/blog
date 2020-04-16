@@ -100,17 +100,17 @@ button.addEventListener('click', function (e) {
 
 //封装
 function throttle(fn, delay=500) {
-        let timer = null
+    let timer = null
 
-        return function () {
-            if (timer) {
-                return
-            }
-
-            timer = setTimeout(() => {
-                fn.apply(this, arguments)
-                timer = null
-            }, delay)
+    return function () {
+        if (timer) {
+            return
         }
+
+        timer = setTimeout(() => {
+            fn.apply(this, arguments)
+            timer = null
+        }, delay)
     }
+}
 ```
