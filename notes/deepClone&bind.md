@@ -49,22 +49,6 @@ function test () {
 
 const fun = test.myBind({name: 'chen'})
 fun()
-
-//封装
-function debounce (fn, delay=500) {
-    let timer = null
-        
-    return function() {
-        if (timer) {
-            clearTimeout(timer)
-        }
-
-        timer = setTimeout(() => {
-            fn.apply(this, arguments)
-            timer = null
-        }, delay)
-    }
-}
 ```
 
 ### 防抖
@@ -81,6 +65,22 @@ button.addEventListener('click', function (e) {
         timer = null
     }, 500);
 })
+
+//封装
+function debounce (fn, delay=500) {
+    let timer = null
+        
+    return function() {
+        if (timer) {
+            clearTimeout(timer)
+        }
+
+        timer = setTimeout(() => {
+            fn.apply(this, arguments)
+            timer = null
+        }, delay)
+    }
+}
 ```
 
 ### 节流
