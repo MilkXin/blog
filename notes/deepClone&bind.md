@@ -50,3 +50,35 @@ function test () {
 const fun = test.myBind({name: 'chen'})
 fun()
 ```
+
+### 防抖
+```
+const button = document.getElementById('btn')
+let timer = null
+button.addEventListener('click', function (e) {
+    if (timer) {
+        clearTimeout(timer)
+    }
+
+    timer = setTimeout(() => {
+        console.log('click')
+        timer = null
+    }, 500);
+})
+```
+
+### 节流
+```
+const button = document.getElementById('btn')
+let timer = null
+button.addEventListener('click', function (e) {
+    if (timer) {
+        return
+    }
+
+    timer = setTimeout(() => {
+        console.log('click')
+        timer = null
+    }, 500);
+})
+```
