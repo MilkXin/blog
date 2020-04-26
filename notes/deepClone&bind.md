@@ -114,3 +114,36 @@ function throttle(fn, delay=500) {
     }
 }
 ```
+
+### 寻找字符串中出现次数最多的字符
+```
+//寻找字符串中出现次数最多的字符
+function fn(str) {
+    const array = str.split('')
+    const obj = {}
+
+    for (let i = 0; i < array.length; i++) {
+        const key = array[i]
+        if (obj[key]) {
+            obj[key] += 1
+        } else {
+            obj[key] = 1
+        }
+    }
+
+    let char = '', num = 0
+    for (const key in obj) {
+        if (obj.hasOwnProperty(key)) {
+            if (obj[key] > num) {
+                char = key
+                num = obj[key]
+            }            
+        }
+    }
+
+    return {char, num}
+}
+
+const str = 'abcabbc'
+console.log(fn(str))
+```
