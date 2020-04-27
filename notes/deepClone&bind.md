@@ -147,3 +147,26 @@ function fn(str) {
 const str = 'abcabbc'
 console.log(fn(str))
 ```
+
+### 数组扁平化
+```
+// 纯数字
+Array.prototype.flat = function () {
+    return this.toString().split(',').map(item => +item)
+}
+const arr = [1, [2, 3], [4, [5, [6]]]]
+const arr1 = arr.flat()
+console.log(arr1); //[1, 2, 3, 4, 5, 6]
+
+
+// 混合类型
+function flat(arr) {
+    while (arr.some(item => Array.isArray(item))) {
+        arr = [].concat(...arr)
+    }
+    return arr
+}
+const arr = [1, ['a', 'b'], [4, [5, [6]]]]
+const arr2 = flat(arr)
+console.log(arr2); //[1, 'a', 'b', 4, 5, 6]
+```
