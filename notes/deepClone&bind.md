@@ -212,20 +212,3 @@ function instance_of(L, R) {
 
 ```
 
-### intanceof
-```
-function instance_of(L, R) {
-    const O = R.prototype
-    L = L.__proto__
-    while(true) {
-        if( L === null) {
-            return false
-        }
-        
-        if(O === L) {
-            return true
-        }
-        L = L.__proto__
-    }
-}
-```
