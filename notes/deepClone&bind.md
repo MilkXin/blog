@@ -50,6 +50,28 @@ function test () {
 const fun = test.myBind({name: 'chen'})
 fun()
 ```
+### call
+```
+Function.prototype.myCall = function() {
+    const args = [...arguments]
+    var context = args.shift() || window
+    context.fn = this
+    const result = context.fn(...args)
+    delete context.fn
+    return result
+}
+```
+### apply
+```
+Function.prototype.myApply = function () {
+    const args = [...arguments]
+    var context = args.shift() || window
+    context.fn = this
+    const result = context.fn(...([].concat(...args)))
+    delete context.fn
+    return result
+}
+```
 
 ### 防抖
 ```
