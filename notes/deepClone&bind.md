@@ -212,3 +212,32 @@ function instance_of(L, R) {
 
 ```
 
+### 跨浏览器事件处理程序封装
+```
+//跨浏览器事件处理程序
+const eventUtil = {
+    //添加句柄
+    addHandler: function(element, type, handle) {
+        if (element.addEventListener) {
+            //dom2级事件处理程序
+            element.addEventListener(type, handle, false)
+        } else if (element.attachEvent) {
+            //IE事件处理程序
+            element.attachEvent('on' + type, handle)
+        } else {
+            //dom0级事件处理程序
+            element['on' + type] = handle
+        }
+    },
+    //删除句柄
+    removeHandler: function (element, type, handle) {
+        if (element.removeEventListener) {
+            element.removeEventListener(type, handle, false)
+        } else if (element.detachEvent) {
+            element.detachEvent('on' + type, handle)
+        } else {
+            element['on' + type] = null
+        }
+    }
+}
+```
