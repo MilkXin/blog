@@ -219,14 +219,26 @@ function flat(arr) {
     }
     return arr
 }
-
-/* function flat(arr) {
-    return [...new Set(arr)]
-} */
-
 const arr = [1, ['a', 'b'], [4, [5, [6]]]]
 const arr2 = flat(arr)
 console.log(arr2); //[1, 'a', 'b', 4, 5, 6]
+```
+
+### 数组去重
+```
+function uniq(arr) {
+    return [...new Set(arr)]
+}
+
+function uniq(arr) {
+    const result = []
+    for (let i=0; i<arr.length; i++) {
+        if (!result.includes(result[i])) {
+            result.push(arr[i])
+        }
+    }
+    return result
+}
 ```
 
 ### 实现instanceof
