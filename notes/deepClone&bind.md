@@ -219,6 +219,11 @@ function flat(arr) {
     }
     return arr
 }
+
+/* function flat(arr) {
+    return [...new Set(arr)]
+} */
+
 const arr = [1, ['a', 'b'], [4, [5, [6]]]]
 const arr2 = flat(arr)
 console.log(arr2); //[1, 'a', 'b', 4, 5, 6]
