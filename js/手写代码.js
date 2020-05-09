@@ -130,18 +130,18 @@ console.log(arr2); //[1, 'a', 'b', 4, 5, 6] */
 
 
 //实现instanceof
-function instance_of(L, R) {
-    const O = R.prototype
-    L = L.__proto__
+function instance_of(left, right) {
+    const prototype = right.prototype
+    proto = left.__proto__
     while(true) {
-        if( L === null) {
+        if( proto === null) {
             return false
         }
         
-        if(O === L) {
+        if(prototype === proto) {
             return true
         }
-        L = L.__proto__
+        proto = proto.__proto__
     }
 }
 
