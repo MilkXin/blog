@@ -203,7 +203,7 @@ Function.prototype.myApply = function(thisArg, rest) {
 4. 如果构造函数中没有返回其它对象，那么返回this，即创建的这个的新对象，否则，返回构造函数中返回的对象。 */
 function _new() {
     let target = {}
-    let { constructor, ...args } = [...arguments]
+    let [ constructor, ...args ] = [...arguments]
     target.__proto__ = constructor.prototype
     let result = constructor.apply(target, args)
     if (result && (typeof result === 'object' || typeof result === 'function')) {
