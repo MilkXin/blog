@@ -132,7 +132,7 @@ console.log(arr2); //[1, 'a', 'b', 4, 5, 6] */
 //实现instanceof
 function instance_of(left, right) {
     const prototype = right.prototype
-    proto = left.__proto__
+    let proto = left.__proto__
     while(true) {
         if( proto === null) {
             return false
