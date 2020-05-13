@@ -245,7 +245,7 @@ function uniq(arr) {
 ```
 function instance_of(left, right) {
     const prototype = right.prototype
-    proto = left.__proto__
+    let proto = left.__proto__
     while(true) {
         if( proto === null) {
             return false
