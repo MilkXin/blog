@@ -258,8 +258,22 @@ function move(id, from, to) {
 
 //斐波拉契数列
 function fibonacci(n) {
+    if(n<=1){
+        return 1
+    }
+    var n0 = 1, n1 = 1, sum;
+    for (let i = 2; i <= n; i++) {
+        sum = n0 + n1
+        n0 = n1
+        n1 = sum
+    }
+    return sum
+}
+//console.log(fibonacci(5))
+/* 递归实现有堆栈溢出问题
+function fibonacci(n) {
     if(n<=1) {
         return 1
     }
     return fibonacci(n-1) + fibonacci(n-2)
-}
+} */
