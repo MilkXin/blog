@@ -240,3 +240,26 @@ function shuffle(arr) {
     }
     return arr;
 }
+
+
+//汉诺塔
+function hanio(n, x, y, z) {
+    if(n === 0) {
+        return
+    }
+    hanio(n-1, x, z, y)
+    move(n, x, z)
+    hanio(n-1, y, x, z)
+}
+function move(id, from, to) {
+    console.log(`把${id}从${from} --> ${to}`)
+}
+// hanio(3, 'A', 'B', 'C')
+
+//斐波拉契数列
+function fibonacci(n) {
+    if(n<=1) {
+        return 1
+    }
+    return fibonacci(n-1) + fibonacci(n-2)
+}
