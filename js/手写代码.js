@@ -94,7 +94,6 @@ function debounce(fn, delay = 500) {
     return function () {
         if (timer) {
             clearTimeout(timer)
-            return
         }
 
         timer = setTimeout(() => {
