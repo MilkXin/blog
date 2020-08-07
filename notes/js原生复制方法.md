@@ -30,15 +30,17 @@
   //js
   const btn = document.querySelector('#btn');
   btn.addEventListener('click',() => {
-      const input = document.createElement('input');
+      const input = document.createElement('input')
+      input.setAttribute('readonly', 'readonly')
+      input.setAttribute('value', '复制的文本')
       document.body.appendChild(input);
-      input.setAttribute('value', '复制的文本');
-      input.select();
+      input.select()
+      //input.setSelectionRange(0, 9999) // ios兼容
       if (document.execCommand('copy')) {
-          document.execCommand('copy');
-          console.log('复制成功');
+          document.execCommand('copy')
+          console.log('复制成功')
       }
-   document.body.removeChild(input);
+   document.body.removeChild(input)
   })
   ```
 
