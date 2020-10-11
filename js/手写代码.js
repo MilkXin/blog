@@ -191,6 +191,18 @@ function instance_of(left, right) {
     }
 }
 
+function instanceOf(A, B) {
+    let p = A
+    while (p) {
+        if (p === B.prototype) {
+            return true
+        }
+        p = p.__proto__
+    }
+
+    return false
+}
+
 
 //手动实现new过程
 /*
