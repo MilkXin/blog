@@ -1,8 +1,22 @@
 #### eslint搭配prettier
 
 - 安装依赖
-  + `npm install prettier eslint-config-prettier eslint-plugin-prettier -D`
+  `npm install prettier eslint-config-prettier eslint-plugin-prettier -D`
+  
 - eslint 配置文件添加 prettier
-  + `extends: ['standard', 'prettier']`
+  `extends: ['standard', 'prettier']`
+  
 - prettier 格式化 npm 修复命令
-  + `"prettier-fix": "prettier --config .prettierrc --write \"./**/*.{html,js,jsx,css,less,scss,json,md}\""`
+  `"prettier-fix": "prettier --config .prettierrc --write \"./**/*.{html,js,jsx,css,less,scss,json,md}\""`
+  
+- .prettier 配置文件
+  ```
+  {
+    "printWidth": 150,
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": false,
+    "singleQuote": true,
+    "jsxSingleQuote": false
+  }
+  ```
