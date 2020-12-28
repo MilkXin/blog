@@ -4,21 +4,43 @@
   + `npm install prettier eslint-config-prettier eslint-plugin-prettier -D`
   + 相关依赖
     ```
-    "eslint": "~7.13.0",
-    "eslint-config-prettier": "~6.15.0",
-    "eslint-config-standard": "~16.0.1",
-    "eslint-loader": "~4.0.2",
-    "eslint-plugin-import": "~2.22.1",
-    "eslint-plugin-node": "~11.1.0",
-    "eslint-plugin-prettier": "~3.1.4",
-    "eslint-plugin-promise": "~4.2.1",
-    "eslint-plugin-react": "~7.21.5",
-    "eslint-plugin-react-hooks": "~4.2.0",
-    "prettier": "^2.1.2",
+    {
+      "scripts": {
+        "lint-staged": "lint-staged",
+        "lint-staged:js": "eslint --ext .js,.jsx"
+      },
+      "husky": {
+        "hooks": {
+          "pre-commit": "npm run lint-staged"
+        }
+      },
+      "lint-staged": {
+        "**/*.{js,jsx,ts,json,html,css,less,scss,md}": [
+          "prettier --write",
+          "git add"
+        ],
+        "**/*.{js,jsx}": "npm run lint-staged:js"
+      },
+      "devDependencies": {
+        "eslint": "~7.13.0",
+        "eslint-config-prettier": "~6.15.0",
+        "eslint-config-standard": "~16.0.1",
+        "eslint-loader": "~4.0.2",
+        "eslint-plugin-import": "~2.22.1",
+        "eslint-plugin-node": "~11.1.0",
+        "eslint-plugin-prettier": "~3.1.4",
+        "eslint-plugin-promise": "~4.2.1",
+        "eslint-plugin-react": "~7.21.5",
+        "eslint-plugin-react-hooks": "~4.2.0",
+        "prettier": "^2.1.2",
+        "husky": "^4.3.0",
+        "lint-staged": "^10.5.2",
+      }
+    }
     ```
   
 - eslint 配置文件添加 prettier
-  + `extends: ['standard', 'prettier']`
+  + 简单配置：`extends: ['standard', 'prettier']`
   + .eslintrc.js相关配置
     ```
     module.exports = {
@@ -63,4 +85,16 @@
       endOfLine: 'auto',
     };
     ```
- 
+- ignore相关配置
+  + .eslintignore
+    ```
+    /dist/
+    /examples/
+    /node_modules/
+    /notes/
+    ```
+  + .prettierignore
+    ```
+    dist/
+    src/font/
+    ```
