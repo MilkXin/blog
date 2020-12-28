@@ -34,3 +34,4 @@
 + [手写代码](https://github.com/MilkXin/blog/blob/master/js/%E6%89%8B%E5%86%99%E4%BB%A3%E7%A0%81.js)
 + [16进制与rgba颜色转换](https://github.com/MilkXin/blog/blob/master/js/color.md)
 + [eslint搭配prettier](https://github.com/MilkXin/blog/blob/master/notes/eslint-prettier.md)
++ [H5兼容问题](https://github.com/MilkXin/blog/edit/master/notes/H5%E5%85%BC%E5%AE%B9%E6%80%A7.md)
