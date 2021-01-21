@@ -98,15 +98,15 @@
     dist/
     src/font/
     ```
-  + vscode相关配置
-    ```
-    {
-      "editor.tabSize": 2,
-      "editor.formatOnSave": true,
-      "editor.formatOnPaste": true,
-      "editor.defaultFormatter": "esbenp.prettier-vscode",
-      "cSpell.words": ["noreferrer", "retdata", "retmsg"],
-      "files.eol": "\n"
-    }
-    ```
+- vscode相关配置
+  ```
+  {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "cSpell.words": ["noreferrer", "retdata", "retmsg"],
+    "files.eol": "\n"
+  }
+  ```
     
