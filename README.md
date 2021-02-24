@@ -35,3 +35,4 @@
 + [16进制与rgba颜色转换](https://github.com/MilkXin/blog/blob/master/js/color.md)
 + [eslint搭配prettier](https://github.com/MilkXin/blog/blob/master/notes/eslint-prettier.md)
 + [H5兼容问题](https://github.com/MilkXin/blog/blob/master/notes/H5%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98.md)
++ [redux实现原理](https://github.com/MilkXin/blog/blob/master/js/redux.js)
