@@ -1,3 +1,6 @@
+### background
+`background:bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;`
+
 ### transform变形
 ```
 transform: rotate(45deg); //旋转
