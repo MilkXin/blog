@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <title>响应式布局</title>
+  </head>
+  <style>
+    /* 基于UI width=750px DPR=2的页面 */
+    html {
+      font-size: calc(100vw / 7.5);
+    }
+    p {
+      font-size: 0.28rem;
+    }
+  </style>
+
+  <body>
+    <p>hello world</p>
+  </body>
+
+  <script>
+    // 响应式布局方案，calc(100vw / 7.5) 与下方js方案二选一
+    
+    // function AutoResponse(width = 750) {
+    //     const target = document.documentElement;
+    //     if (target.clientWidth >= 600) {
+    //         target.style.fontSize = '80px';
+    //     } else {
+    //       target.style.fontSize = (target.clientWidth / width) * 100 + 'px';
+    //   }
+    // }
+    // AutoResponse();
+  </script>
+</html>
