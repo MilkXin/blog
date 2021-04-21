@@ -34,6 +34,6 @@
 + [手写代码](https://github.com/MilkXin/blog/blob/master/js/%E6%89%8B%E5%86%99%E4%BB%A3%E7%A0%81.js)
 + [16进制与rgba颜色转换](https://github.com/MilkXin/blog/blob/master/js/color.md)
 + [eslint搭配prettier](https://github.com/MilkXin/blog/blob/master/notes/eslint-prettier.md)
-+ [H5兼容问题](https://github.com/MilkXin/blog/blob/master/notes/H5%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98.md)
++ [H5常见问题汇总](https://github.com/MilkXin/blog/blob/master/notes/%E7%A7%BB%E5%8A%A8%E7%AB%AFH5%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB.md)
 + [redux实现原理](https://github.com/MilkXin/blog/blob/master/js/redux.js)
 + [响应式布局方案](https://github.com/MilkXin/blog/blob/master/html/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80.html)
