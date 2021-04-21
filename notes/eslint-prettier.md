@@ -3,7 +3,7 @@
 - 安装依赖
   + `npm install prettier eslint-config-prettier eslint-plugin-prettier -D`
   + 相关依赖
-    ```
+    ```js
     {
       "scripts": {
         "lint-staged": "lint-staged",
@@ -42,7 +42,7 @@
 - eslint 配置文件添加 prettier
   + 简单配置：`extends: ['standard', 'prettier']`
   + .eslintrc.js相关配置
-    ```
+    ```js
     module.exports = {
       root: true,
       env: {
@@ -74,7 +74,7 @@
   + `npx prettier --write .`
   + `"prettier-fix": "prettier --config .prettierrc --write \"./**/*.{html,js,jsx,css,less,scss,json,md}\""`
   + .prettierrc.js文件
-    ```
+    ```js
     module.exports = {
       printWidth: 120,
       tabWidth: 2,
@@ -99,7 +99,7 @@
     src/font/
     ```
 - vscode相关配置
-  ```
+  ```js
   {
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
