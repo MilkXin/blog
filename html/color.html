@@ -1,119 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Colorful</title>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
 
-        ul{
-            padding: 50px;
-            display: flex;
-            flex-wrap: wrap;
-        }
+      ul {
+        padding: 50px;
+        display: flex;
+        flex-wrap: wrap;
+      }
 
-        ul>li{
-            position: relative;
-            flex: 0 0 calc(10% - 18px);
-            height: 100px;
-            margin: 0 20px 38px 0;
-        }
+      ul > li {
+        position: relative;
+        flex: 0 0 calc(10% - 18px);
+        height: 100px;
+        margin: 0 20px 38px 0;
+      }
 
-        ul>li:nth-child(10n){
-            margin-right: 0;
-        }
+      ul > li:nth-child(10n) {
+        margin-right: 0;
+      }
 
-        ul>li>p{
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            position: absolute;
-            bottom: -18px;
-            font-size: 12px;
-            color:#555;
-        }
+      ul > li > p {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: absolute;
+        bottom: -18px;
+        font-size: 12px;
+        color: #555;
+      }
 
-        ul>li>p i{
-            display: inline-block;
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-        }
+      ul > li > p i {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div id="app"></div>
-</body>
-<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-<script type="text/babel">
+  </body>
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script type="text/babel">
     const colors = [
-        ['#eebd89', '#d13abd'],
-        ['#9600ff', '#aebaf8'],
-        ['#f6ea41', '#f048c6'],
-        ['#bb73e0', '#ff8ddb'],
-        ['#0ccda3', '#c1fcd3'],
-        ['#c973ff', '#aebaf8'],
-        ['#f9957f', '#f2f5d0'],
-        ['#b60f46', '#d592ff'],
-        ['#a3c9e2', '#9618f7'],
-        ['#ff0078', '#f6efa7'],
-        ['#849b5c', '#bfffc7'],
-        ['#e5aac3', '#9a52c7'],
-        ['#e65758', '#771d32'],
-        ['#ef33b1', '#f6e6bc'],
-        ['#c22ed0', '#5ffae0'],
-        ['#9fa5d5', '#e8f5c8'],
-        ['#0c7bb3', '#f2bae8'],
-        ['#58126a', '#f6b2e1'],
-        ['#e3ff73', '#e27c39'],
-        ['#07a3b2', '#d9ecc7'],
-        ['#dafea4', '#f254a8'],
-        ['#ccfbff', '#ef96c5'],
-        ['#50d5b7', '#067d68'],
-        ['#a96f44', '#f2ecb6'],
-        ['#af6480', '#c3cee5'],
-        ['#ed765e', '#e3bde5'],
-        ['#ead6ee', '#a0f1ea'],
-        ['#7dc387', '#dbe9ea'],
-        ['#f6a09a', '#8a1f1d'],
-        ['#ae8ba1', '#f2ecb6'],
-        ['#af6480', '#f6b2e1'],
-        ['#4b086d', '#acc0fe'],
-        ['#7e2423', '#e3bde5'],
-        ['#eae5c9', '#6cc6cb'],
-        ['#a96f44', '#f6b2e1'],
-        ['#ed765e', '#fea858'],
-        ['#b51f1a', '#f98ef6']
+      ['#eebd89', '#d13abd'],
+      ['#9600ff', '#aebaf8'],
+      ['#f6ea41', '#f048c6'],
+      ['#bb73e0', '#ff8ddb'],
+      ['#0ccda3', '#c1fcd3'],
+      ['#c973ff', '#aebaf8'],
+      ['#f9957f', '#f2f5d0'],
+      ['#b60f46', '#d592ff'],
+      ['#a3c9e2', '#9618f7'],
+      ['#ff0078', '#f6efa7'],
+      ['#849b5c', '#bfffc7'],
+      ['#e5aac3', '#9a52c7'],
+      ['#e65758', '#771d32'],
+      ['#ef33b1', '#f6e6bc'],
+      ['#c22ed0', '#5ffae0'],
+      ['#9fa5d5', '#e8f5c8'],
+      ['#0c7bb3', '#f2bae8'],
+      ['#58126a', '#f6b2e1'],
+      ['#e3ff73', '#e27c39'],
+      ['#07a3b2', '#d9ecc7'],
+      ['#dafea4', '#f254a8'],
+      ['#ccfbff', '#ef96c5'],
+      ['#50d5b7', '#067d68'],
+      ['#a96f44', '#f2ecb6'],
+      ['#af6480', '#c3cee5'],
+      ['#ed765e', '#e3bde5'],
+      ['#ead6ee', '#a0f1ea'],
+      ['#7dc387', '#dbe9ea'],
+      ['#f6a09a', '#8a1f1d'],
+      ['#ae8ba1', '#f2ecb6'],
+      ['#af6480', '#f6b2e1'],
+      ['#4b086d', '#acc0fe'],
+      ['#7e2423', '#e3bde5'],
+      ['#eae5c9', '#6cc6cb'],
+      ['#a96f44', '#f6b2e1'],
+      ['#ed765e', '#fea858'],
+      ['#b51f1a', '#f98ef6'],
     ]
-    function ColorList () {
-        return (
-            <ul>
-                {
-                    colors.map((item, index) => {
-                    return (
-                        <li style={{backgroundImage: `linear-gradient(to bottom right, ${item[0]},  ${item[1]})`}}>
-                            <p>
-                                <span><i style={{backgroundColor: item[0]}}></i>{item[0]}</span>
-                                <span><i style={{backgroundColor: item[1]}}></i>{item[1]}</span>
-                            </p>
-                        </li>
-                    )
-                    })
-                }
-            </ul>
-        )
+    function ColorList() {
+      return (
+        <ul>
+          {colors.map((item, index) => {
+            return (
+              <li style={{ backgroundImage: `linear-gradient(to bottom right, ${item[0]},  ${item[1]})` }}>
+                <p>
+                  <span>
+                    <i style={{ backgroundColor: item[0] }}></i>
+                    {item[0]}
+                  </span>
+                  <span>
+                    <i style={{ backgroundColor: item[1] }}></i>
+                    {item[1]}
+                  </span>
+                </p>
+              </li>
+            )
+          })}
+        </ul>
+      )
     }
 
     ReactDOM.render(<ColorList />, document.getElementById('app'))
-</script>
+  </script>
 </html>

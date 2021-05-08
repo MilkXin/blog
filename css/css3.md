@@ -1,7 +1,9 @@
 ### background
+
 `background:bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;`
 
-### transform变形
+### transform 变形
+
 ```
 transform: rotate(45deg); //旋转
 
@@ -20,7 +22,8 @@ transform: translateY(100px);
 transform-origin: left top; //原点
 ```
 
-### transition过渡
+### transition 过渡
+
 ```
 transition: width .5s ease .1s;
 
@@ -30,7 +33,8 @@ transition-timing-function: ease-in; //过渡函数(linear, ease, ease-in, ease-
 transition-delay: .1s; //延迟时间
 ```
 
-### animation, keyframes动画
+### animation, keyframes 动画
+
 ```
 @keyframes toradius{
     from {

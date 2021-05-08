@@ -1,4 +1,5 @@
-### rem多屏适配reset
+### rem 多屏适配 reset
+
 ```
 *{max-width:100%;max-height:100%;outline:none;-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-box-sizing:border-box;}
 

@@ -1,4 +1,4 @@
-[location详解文章](https://www.jianshu.com/p/bd0866de3621)
+[location 详解文章](https://www.jianshu.com/p/bd0866de3621)
 
 ```
 var url = document.location;

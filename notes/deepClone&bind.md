@@ -6,7 +6,9 @@
  * @Description: In User Settings Edit
  * @FilePath: \FrontEnd\blog\notes\deepClone&bind.md
  -->
+
 ### deepClone
+
 ```
 const deepClone = (arg) => {
     if (typeof arg !== 'object' || arg === null) {
@@ -30,8 +32,8 @@ const deepClone = (arg) => {
 }
 ```
 
-
 ### bind
+
 ```
 Function.prototype.myBind = function () {
     const args = [...arguments]
@@ -50,7 +52,9 @@ function test () {
 const fun = test.myBind({name: 'chen'})
 fun()
 ```
+
 ### call
+
 ```
 /* Function.prototype.myCall = function() {
     const args = [...arguments]
@@ -76,7 +80,9 @@ Function.prototype.myCall = function() {
     return result
 }
 ```
+
 ### apply
+
 ```
 /* Function.prototype.myApply = function () {
     const args = [...arguments]
@@ -105,6 +111,7 @@ Function.prototype.myApply = function(thisArg, rest) {
 ```
 
 ### 防抖
+
 ```
 const button = document.getElementById('btn')
 let timer = null
@@ -122,7 +129,7 @@ button.addEventListener('click', function (e) {
 //封装
 function debounce (fn, delay=500) {
     let timer = null
-        
+
     return function() {
         if (timer) {
             clearTimeout(timer)
@@ -137,6 +144,7 @@ function debounce (fn, delay=500) {
 ```
 
 ### 节流
+
 ```
 const button = document.getElementById('btn')
 let timer = null
@@ -169,6 +177,7 @@ function throttle(fn, delay=500) {
 ```
 
 ### 寻找字符串中出现次数最多的字符
+
 ```
 //寻找字符串中出现次数最多的字符
 function fn(str) {
@@ -190,7 +199,7 @@ function fn(str) {
             if (obj[key] > num) {
                 char = key
                 num = obj[key]
-            }            
+            }
         }
     }
 
@@ -202,6 +211,7 @@ console.log(fn(str))
 ```
 
 ### 数组扁平化
+
 ```
 // 纯数字
 Array.prototype.flat = function () {
@@ -225,6 +235,7 @@ console.log(arr2); //[1, 'a', 'b', 4, 5, 6]
 ```
 
 ### 数组去重
+
 ```
 function uniq(arr) {
     return [...new Set(arr)]
@@ -241,7 +252,8 @@ function uniq(arr) {
 }
 ```
 
-### 实现instanceof
+### 实现 instanceof
+
 ```
 function instance_of(left, right) {
     const prototype = right.prototype
@@ -250,7 +262,7 @@ function instance_of(left, right) {
         if( proto === null) {
             return false
         }
-        
+
         if(prototype === proto) {
             return true
         }
@@ -261,6 +273,7 @@ function instance_of(left, right) {
 ```
 
 ### 跨浏览器事件处理程序封装
+
 ```
 //跨浏览器事件处理程序
 const eventUtil = {
@@ -291,6 +304,7 @@ const eventUtil = {
 ```
 
 ### 洗牌算法
+
 ```
 // 著名的Fisher–Yates shuffle 洗牌算法
 function shuffle(arr) {

@@ -1,4 +1,5 @@
-### 16进制颜色转 rgba 颜色
+### 16 进制颜色转 rgba 颜色
+
 ```
 const colorRgb = (colorHex, alpha = 1) => {
     const reg = /^#([0-9a-fA-f]{3}|[0-9a-fA-f]{6})$/
@@ -24,7 +25,8 @@ const colorRgb = (colorHex, alpha = 1) => {
 }
 ```
 
-### rgba 颜色转16进制颜色
+### rgba 颜色转 16 进制颜色
+
 ```
 const colorHex = (color) => {
     const values = color

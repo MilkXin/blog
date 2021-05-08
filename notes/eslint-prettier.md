@@ -1,8 +1,8 @@
-#### eslint搭配prettier
+#### eslint 搭配 prettier
 
 - 安装依赖
-  + `npm install prettier eslint-config-prettier eslint-plugin-prettier -D`
-  + 相关依赖
+  - `npm install prettier eslint-config-prettier eslint-plugin-prettier -D`
+  - 相关依赖
     ```js
     {
       "scripts": {
@@ -38,10 +38,9 @@
       }
     }
     ```
-  
 - eslint 配置文件添加 prettier
-  + 简单配置：`extends: ['standard', 'prettier']`
-  + .eslintrc.js相关配置
+  - 简单配置：`extends: ['standard', 'prettier']`
+  - .eslintrc.js 相关配置
     ```js
     module.exports = {
       root: true,
@@ -50,7 +49,12 @@
         es6: true,
         node: true,
       },
-      extends: ['standard', 'plugin:react/recommended', 'plugin:react-hooks/recommended', 'plugin:prettier/recommended'],
+      extends: [
+        'standard',
+        'plugin:react/recommended',
+        'plugin:react-hooks/recommended',
+        'plugin:prettier/recommended',
+      ],
       parser: 'babel-eslint',
       plugins: ['react', 'react-hooks'],
       globals: {
@@ -67,13 +71,12 @@
           version: 'detect',
         },
       },
-    };
+    }
     ```
-  
 - prettier 格式化 npm 修复命令
-  + `npx prettier --write .`
-  + `"prettier-fix": "prettier --config .prettierrc --write \"./**/*.{html,js,jsx,css,less,scss,json,md}\""`
-  + .prettierrc.js文件
+  - `npx prettier --write .`
+  - `"prettier-fix": "prettier --config .prettierrc --write \"./**/*.{html,js,jsx,css,less,scss,json,md}\""`
+  - .prettierrc.js 文件
     ```js
     module.exports = {
       printWidth: 120,
@@ -83,22 +86,22 @@
       singleQuote: true,
       jsxSingleQuote: false,
       endOfLine: 'auto',
-    };
+    }
     ```
-- ignore相关配置
-  + .eslintignore
+- ignore 相关配置
+  - .eslintignore
     ```
     /dist/
     /examples/
     /node_modules/
     /notes/
     ```
-  + .prettierignore
+  - .prettierignore
     ```
     dist/
     src/font/
     ```
-- vscode相关配置
+- vscode 相关配置
   ```js
   {
     "editor.tabSize": 2,
@@ -109,4 +112,3 @@
     "files.eol": "\n"
   }
   ```
-    

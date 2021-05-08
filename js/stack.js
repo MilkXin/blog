@@ -1,30 +1,30 @@
 //栈
 class Stack {
-    constructor() {
-        this.items = []
-    }
+  constructor() {
+    this.items = []
+  }
 
-    push(item) {
-        this.items.push(item)
-    }
+  push(item) {
+    this.items.push(item)
+  }
 
-    pop() {
-        this.items.pop()
-    }
+  pop() {
+    this.items.pop()
+  }
 
-    size() {
-        return this.items.length
-    }
+  size() {
+    return this.items.length
+  }
 
-    isEmpty() {
-        return !this.items.length
-    }
+  isEmpty() {
+    return !this.items.length
+  }
 
-    clear() {
-        this.items = []
-    }
+  clear() {
+    this.items = []
+  }
 
-    print() {
-        return this.items.toString()
-    }
+  print() {
+    return this.items.toString()
+  }
 }
