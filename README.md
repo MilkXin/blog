@@ -36,5 +36,6 @@
 - [16 进制与 rgba 颜色转换](https://github.com/MilkXin/blog/blob/master/js/color.md)
 - [eslint 搭配 prettier](https://github.com/MilkXin/blog/blob/master/notes/eslint-prettier.md)
 - [H5 常见问题汇总](https://github.com/MilkXin/blog/blob/master/notes/%E7%A7%BB%E5%8A%A8%E7%AB%AFH5%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB.md)
+- [移动端必备h5问题解决方案](https://github.com/MilkXin/suo-blog/blob/master/articals/h5/0003.md)
 - [redux 实现原理](https://github.com/MilkXin/blog/blob/master/js/redux.js)
 - [响应式布局方案](https://github.com/MilkXin/blog/blob/master/html/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80.html)
