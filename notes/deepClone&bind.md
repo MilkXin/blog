@@ -255,19 +255,15 @@ function uniq(arr) {
 ### 实现 instanceof
 
 ```
-function instance_of(left, right) {
-    const prototype = right.prototype
-    let proto = left.__proto__
-    while(true) {
-        if( proto === null) {
-            return false
-        }
+function instance_of(A, B) {
+  if (A == null) return false
 
-        if(prototype === proto) {
-            return true
-        }
-        proto = proto.__proto__
-    }
+  let p = A.__proto__
+  while (p) {
+    if (p === B.prototype) return true
+    p = p.__proto__
+  }
+  return false
 }
 
 ```
