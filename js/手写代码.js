@@ -172,30 +172,29 @@ const arr2 = flat(arr)
 console.log(arr2); //[1, 'a', 'b', 4, 5, 6] */
 
 //实现instanceof
-function instance_of(left, right) {
-  const prototype = right.prototype
-  let proto = left.__proto__
-  while (true) {
-    if (proto === null) {
-      return false
-    }
+// function instance_of(left, right) {
+//   const prototype = right.prototype
+//   let proto = left.__proto__
+//   while (true) {
+//     if (proto === null) {
+//       return false
+//     }
 
-    if (prototype === proto) {
-      return true
-    }
-    proto = proto.__proto__
-  }
-}
+//     if (prototype === proto) {
+//       return true
+//     }
+//     proto = proto.__proto__
+//   }
+// }
 
 function instanceOf(A, B) {
-  let p = A
+  if (A == null) return false
+
+  let p = A.__proto__
   while (p) {
-    if (p === B.prototype) {
-      return true
-    }
+    if (p === B.prototype) return true
     p = p.__proto__
   }
-
   return false
 }
 
