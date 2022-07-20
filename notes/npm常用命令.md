@@ -134,3 +134,9 @@
     ```
     npm prune
     ```
+    
+13. **安装源**
+    ```
+    npm get registry // 查看安装源
+    npm config set registry http://registry.npmmirror.org // 设置淘宝源
+    ```
