@@ -39,3 +39,5 @@
 - [移动端必备h5问题解决方案](https://github.com/MilkXin/suo-blog/blob/master/articals/h5/0003.md)
 - [redux 实现原理](https://github.com/MilkXin/blog/blob/master/js/redux.js)
 - [响应式布局方案](https://github.com/MilkXin/blog/blob/master/html/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80.html)
+- [工具函数](https://github.com/MilkXin/blog/blob/master/js/utils.js)
+
