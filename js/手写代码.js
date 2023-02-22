@@ -241,6 +241,19 @@ const curry = (fn, ...args) => {
   return args.length < fn.length ? (...arguments) => curry(fn, ...args, ...arguments) : fn(...args)
 }
 
+// 组合函数compose, 将需要嵌套执行的函数扁平化处理
+function compose(...funcs) {
+  if(funcs.length === 0) {
+    return arg => arg
+  }
+  
+  if(funcs.length === 1) {
+    return funcs[0]
+  }
+  
+  return funcs.reduce((a, b) => (...args) => a(b(...args)))
+}
+
 /* function sumFn(a, b, c) {
     return a + b + c
 }
