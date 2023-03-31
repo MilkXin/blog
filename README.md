@@ -40,4 +40,5 @@
 - [redux 实现原理](https://github.com/MilkXin/blog/blob/master/js/redux.js)
 - [响应式布局方案](https://github.com/MilkXin/blog/blob/master/html/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80.html)
 - [工具函数](https://github.com/MilkXin/blog/blob/master/js/utils.js)
+- [拖拽拍寻](https://github.com/MilkXin/blog/blob/master/html/%E6%8B%96%E6%8B%BD%E6%8E%92%E5%BA%8F.html)
 
