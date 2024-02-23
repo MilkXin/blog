@@ -22,6 +22,24 @@ function deepClone(arg) {
   return result
 }
 
+Function.prototype.call = function (obj, ...args) {
+    const context = obj
+    const fn = Symbol()
+    context[fn] = this
+    const result = context[fn](...args)
+    delete context[fn]
+    return result
+}
+
+Function.prototype.apply = function (obj, args) {
+    const context = obj
+    const fn = Symbol()
+    context[fn] = this
+    const result = context[fn](...args)
+    delete context[fn]
+    return result
+}
+
 //call
 /* Function.prototype.myCall = function() {
     const args = [...arguments]
