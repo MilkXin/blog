@@ -278,6 +278,12 @@ function compose(...funcs) {
 const sum = curry(sumFn)
 console.log('>> ', sum(2)(3)(5)); */
 
+// pipe 的另一种实现, 可以支持首个函数多个参数
+const pipe = (...funcs) => funcs.reduce((a, b) => (...args) => b(a(...args)))
+
+// compose 的另一种实现, 可以支持首个函数多个参数
+const compose = (...funcs) => funcs.reduce((a, b) => (...args) => a(b(...args)))
+
 // 著名的Fisher–Yates shuffle 洗牌算法
 function shuffle(arr) {
   let m = arr.length
