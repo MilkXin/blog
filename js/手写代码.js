@@ -135,6 +135,18 @@ function throttle(fn, delay) {
   }
 }
 
+// 另一种基于时间控制的节流函数，更简单
+function throttle(fn, delay = 500) {
+  let lastCall = 0;
+  return function (...args) {
+    const now = Date.now();
+    if (now - lastCall >= delay) {
+      lastCall = now;
+      fn.apply(this, args);
+    }
+  };
+}
+
 //寻找字符串中出现次数最多的字符
 function fn(str) {
   const array = str.split('')
