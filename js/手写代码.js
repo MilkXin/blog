@@ -186,6 +186,15 @@ function flat(arr) {
   return arr
 }
 
+// 数组扁平化————递归法
+function flatten(arr) {
+  return arr.reduce(
+    (acc, val) =>
+      Array.isArray(val) ? acc.concat(flatten(val)) : acc.concat(val),
+    []
+  );
+}
+
 //数组去重
 function uniq(arr) {
   const result = []
