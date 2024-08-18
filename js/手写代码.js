@@ -107,13 +107,13 @@ test.myBind({name: 'chen'})() */
 function debounce(fn, delay = 500) {
   let timer = null
 
-  return function () {
+  return function (...args) {
     if (timer) {
       clearTimeout(timer)
     }
 
     timer = setTimeout(() => {
-      fn.apply(this, arguments)
+      fn.apply(this, args)
       timer = null
     }, delay)
   }
@@ -123,13 +123,13 @@ function debounce(fn, delay = 500) {
 function throttle(fn, delay) {
   let timer = null
 
-  return function () {
+  return function (...args) {
     if (timer) {
       return
     }
 
     timer = setTimeout(() => {
-      fn.apply(this, arguments)
+      fn.apply(this, args)
       timer = null
     }, delay)
   }
