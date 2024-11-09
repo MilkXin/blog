@@ -1,25 +1,16 @@
 //深拷贝
 function deepClone(arg) {
-  if (arg instanceof RegExp) return new RegExp(arg)
-  if (arg instanceof Date) return new Date(arg)
-  if (typeof arg !== 'object' || arg === null) {
-    return arg
-  }
+  if (arg instanceof RegExp) return new RegExp(arg);
+  if (arg instanceof Date) return new Date(arg);
+  if (typeof arg !== "object" || arg === null) return arg;
 
-  let result
-  if (arg instanceof Array) {
-    result = []
-  } else {
-    result = {}
-  }
-
-  for (const key in arg) {
+  const res = Array.isArray(arg) ? [] : {};
+  for (let key in arg) {
     if (arg.hasOwnProperty(key)) {
-      result[key] = deepClone(arg[key])
+      res[key] = deepClone(arg[key]);
     }
   }
-
-  return result
+  return res;
 }
 
 Function.prototype.call = function (obj, ...args) {
