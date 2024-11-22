@@ -25,7 +25,6 @@
 - [js 原生复制内容到剪切板](https://github.com/MilkXin/blog/blob/master/notes/js%E5%8E%9F%E7%94%9F%E5%A4%8D%E5%88%B6%E6%96%B9%E6%B3%95.md)
 - [npm 常用命令](https://github.com/MilkXin/blog/blob/master/notes/npm%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.md)
 - [flex 布局](https://github.com/MilkXin/blog/blob/master/img/flex%E5%B8%83%E5%B1%80.jpg)
-- [手写 deepClone 和 bind 函数](https://github.com/MilkXin/blog/blob/master/notes/deepClone%26bind.md)
 - [前端内存泄露](https://segmentfault.com/a/1190000020277827)
 - [渐变色收藏](https://github.com/MilkXin/blog/blob/master/html/color.html)
 - [网页尺寸](https://github.com/MilkXin/blog/blob/master/notes/%E7%BD%91%E9%A1%B5%E5%B0%BA%E5%AF%B8.md)
